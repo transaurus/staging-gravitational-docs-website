@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+button {
+  font-family: var(--font-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  code {
+    font-size: 0.85em !important;
+  }
+}
+
+.navbar-sidebar {
+  padding-top: var(--ifm-navbar-height);
+}
+
+.navbar-sidebar__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--ifm-menu-link-padding-vertical)
+    var(--ifm-menu-link-padding-horizontal)
+    var(--ifm-menu-link-padding-vertical) 0;
+}
+
+.navbar-sidebar__versions {
+  display: flex;
+  align-items: center;
+  padding: var(--ifm-menu-link-padding-vertical)
+    var(--ifm-menu-link-padding-horizontal);
+}
+
+.navbar-sidebar__search {
+  padding: 0.5rem;
+}
+
+@media (max-width: 996px) {
+  .navbar__item {
+    display: block;
+  }
+}
+
+/* Accessibility-safe class to visually hide content while keeping it available to screen readers and SEO */
+.hide-title-section {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.docItemTitle {
+  color: var(--color-dark-purple);
+  font-size: var(--fs-header-1);
+  line-height: 1.375;
+  margin-bottom: var(--m-0-5) !important;
+
+  @media (--md-scr) {
+    font-size: var(--fs-title-md);
+    line-height: 1.333;
+  }
+
+  @media (--lg-scr) {
+    font-size: var(--fs-title-lg);
+    line-height: 1.3;
+  }
+}
+
+.docItemDescription {
+  color: var(--color-foreground-slightly-muted);
+  font-size: var(--fs-text-lg);
+  line-height: 1.625;
+  margin-bottom: 0;
+  font-weight: var(--fw-medium);
+
+  @media (--md-scr) {
+    line-height: 1.75;
+  }
+
+  @media (--lg-scr) {
+    font-size: var(--fs-text-xl);
+    line-height: 1.66667;
+  }
+}
+
+/* MermaidJS diagrams*/
+svg g.architecture-service text tspan,
+svg g.architecture-groups text tspan {
+  font-weight: 900;
+}
+
+svg g.architecture-edges {
+  path {
+    stroke: var(--color-light-gray) !important;
+  }
+  polygon {
+    fill: var(--color-light-gray) !important;
+  }
+}

@@ -1,0 +1,47 @@
+# Dependencies
+/node_modules
+
+# Production
+/build
+
+# Generated files
+.docusaurus
+.cache-loader
+storybook-static
+
+# Misc
+.env
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docs
+versioned_docs/*
+!versioned_docs/.gitkeep
+versioned_sidebars/*
+!versioned_sidebars/.gitkeep
+docs/*
+!docs/.gitkeep
+sidebars.json
+static/assets/*
+versions.json
+data/*
+!data/.gitkeep
+
+# Migration node dependencies
+.build
+
+# remark node dependencies
+.remark-build
+
+# Submodule config for local development
+.gitmodules
+
+# gravitational/teleport archives
+.downloads
