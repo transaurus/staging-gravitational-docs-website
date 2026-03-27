@@ -1,0 +1,10 @@
+{
+  "sourceUrl": "https://github.com/gravitational/docs-website",
+  "branch": "main",
+  "docusaurusRoot": ".",
+  "configFile": "docusaurus.config.ts",
+  "translateCommand": "yarn write-translations",
+  "buildCommand": "yarn prepare-files && yarn prepare-navigation-data && npx docusaurus build",
+  "buildOutput": "build",
+  "packageManager": "yarn"
+}
