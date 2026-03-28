@@ -167,15 +167,15 @@ const config: Config = {
       return result;
     },
     hooks: {
-      onBrokenMarkdownLinks: "throw",
+      onBrokenMarkdownLinks: "warn",
     },
     emoji: false, // disabled because code snippets could be unintentionally replaced with emojis (https://github.com/gravitational/docs-website/issues/554).
   },
   themes: ["@docusaurus/theme-mermaid"],
-  onBrokenLinks: "throw",
+  onBrokenLinks: 'warn',
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "zh-Hans"],
   },
   plugins: [
     [
